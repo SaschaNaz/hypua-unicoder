@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>hypua-unicoder sample app</title>
+    <link href="./index.css" rel="stylesheet" />
+    <script src="https://rawgit.com/systemjs/systemjs/master/dist/system.js"></script>
+    <script>
+        SystemJS.config({ meta: { "./lib/index.js": { format: "cjs" } } });
+        const convertPromise = SystemJS.import("./lib/index.js")
+        document.addEventListener("DOMContentLoaded", () => {
+            convert.addEventListener("click", async () => {
+                const { default: convert } = await convertPromise;
+                output.value = convert(source.value, { htmlEscape: htmlEscapeCheckbox.checked });
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>hypua-unicoder sample app</h1>
+    <textarea id="source" spellcheck="false"></textarea>
+    <div>
+    <button id="convert">Convert</button><label><input type="checkbox" id="htmlEscapeCheckbox" /> escape in HTML entity code</label>
+    </div>
+    <textarea id="output" spellcheck="false"></textarea>
+</body>
+
+</html>

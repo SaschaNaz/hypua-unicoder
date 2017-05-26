@@ -1,0 +1,24 @@
+{
+  "name": "hypua-unicoder",
+  "version": "1.0.0",
+  "description": "A JavaScript module to convert legacy Hanyang PUA characters to Unicode. ",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaschaNaz/hypua-unicoder.git"
+  },
+  "keywords": [
+    "hanyang",
+    "pua",
+    "unicode"
+  ],
+  "author": "Kagami Sascha Rosylight <saschanaz@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaschaNaz/hypua-unicoder/issues"
+  },
+  "homepage": "https://github.com/SaschaNaz/hypua-unicoder#readme"
+}
