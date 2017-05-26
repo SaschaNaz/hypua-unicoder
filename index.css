@@ -1,9 +1,9 @@
-html, body {
+html, body, .content {
     height: 100%;
     margin: 0;
 }
 
-body {
+.content {
     display: grid;
     -ms-grid-rows: auto 1fr auto 1fr;
     grid-template-rows: auto 1fr auto 1fr;
@@ -12,7 +12,7 @@ body {
 
 }
 
-body > * {
+.content > * {
     margin: 8px;
 }
 
