@@ -12,6 +12,10 @@ body {
 
 }
 
+body > * {
+    margin: 8px;
+}
+
 h1 {
     -ms-grid-row: 1;
     grid-row: 1;
