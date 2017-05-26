@@ -22,7 +22,7 @@ h1 {
     grid-row: 2;
 }
 
-button {
+div {
     -ms-grid-row: 3;
     grid-row: 3;
 }
